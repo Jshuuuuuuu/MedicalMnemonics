@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedMnemonics - Mnemonics Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <i class="fas fa-brain"></i>Med<span>Mnemonics</span>
+            </a>
+            <div class="nav-links">
+                <a href="#">Link one</a>
+                <a href="#">Link two</a>
+                <a href="#">Link three</a>
+                <a href="#">Link four</a>
+                <a href="#" class="logout">Log out</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <h1 class="page-title">Famous Mnemonics</h1>
+        
+        <div class="library-container">
+            <aside class="sidebar">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li class="active"><a href="#">Pathology</a></li>
+                    <li><a href="#">Anatomy</a></li>
+                    <li><a href="#">Histology</a></li>
+                    <li><a href="#">Embryology</a></li>
+                    <li><a href="#">Pharmacology</a></li>
+                    <li><a href="#">Microbiology</a></li>
+                </ul>
+            </aside>
+            
+            <main class="mnemonics-content">
+                <div class="content-header">
+                    <h2>Famous Mnemonics</h2>
+                    <div class="search-container">
+                        <input type="text" placeholder="Search mnemonics...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                
+                <div class="mnemonics-grid" id="mnemonics-grid">
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

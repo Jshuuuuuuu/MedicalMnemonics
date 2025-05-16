@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedMnemonics - Add New Mnemonic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <i class="fas fa-brain"></i>Med<span>Mnemonics</span>
+            </a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Library</a>
+                <a href="#">Contribute</a>
+                <a href="#">About</a>
+                <a href="#" class="logout">Log out</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <h1 class="page-title">Add New Mnemonic</h1>
+        
+        <div class="form-container">
+            <form id="mnemonic-form">
+                <div class="form-group">
+                    <label for="title">Mnemonic Title*</label>
+                    <input type="text" id="title" name="title" required placeholder="e.g., CRASH for Beta-Blocker Toxicity">
+                </div>
+                
+                <div class="form-group">
+                    <label for="content">Mnemonic Content*</label>
+                    <textarea id="content" name="content" rows="5" required placeholder="Enter the full mnemonic content. You can use bullet points or separate lines for each part.
+                    
+Example:
+C - Confusion
+R - Refractory seizures
+A - Arrhythmias
+S - Sedation/hypotension
+H - Hypoglycemia"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="category">Category*</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select a category</option>
+                            <option value="pathology">Pathology</option>
+                            <option value="anatomy">Anatomy</option>
+                            <option value="histology">Histology</option>
+                            <option value="embryology">Embryology</option>
+                            <option value="pharmacology">Pharmacology</option>
+                            <option value="microbiology">Microbiology</option>
+                            <option value="physiology">Physiology</option>
+                            <option value="biochemistry">Biochemistry</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="system">Body System</label>
+                        <select id="system" name="system">
+                            <option value="">Select a system (optional)</option>
+                            <option value="cardiovascular">Cardiovascular</option>
+                            <option value="respiratory">Respiratory</option>
+                            <option value="gastrointestinal">Gastrointestinal</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="endocrine">Endocrine</option>
+                            <option value="renal">Renal</option>
+                            <option value="musculoskeletal">Musculoskeletal</option>
+                            <option value="dermatology">Dermatology</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="difficulty">Difficulty Level</label>
+                        <select id="difficulty" name="difficulty">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate" selected>Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exam">Exam Relevance</label>
+                        <select id="exam" name="exam">
+                            <option value="">Any exam</option>
+                            <option value="usmle">USMLE</option>
+                            <option value="ncle">NCLEX</option>
+                            <option value="plab">PLAB</option>
+                            <option value="medical-school">Medical School</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tags">Tags (comma separated)</label>
+                    <input type="text" id="tags" name="tags" placeholder="e.g., emergency, toxicology, cardiology">
+                    <small>Add relevant tags to help others find your mnemonic</small>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Mnemonic</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
