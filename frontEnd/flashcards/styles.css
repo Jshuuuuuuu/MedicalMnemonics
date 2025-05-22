@@ -39,10 +39,16 @@ nav {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: 10px;
 }
 
 .logo span {
