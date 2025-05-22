@@ -1,3 +1,9 @@
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import FirebaseService from './FirebaseService.js';
+
+
+const firebaseService = new FirebaseService();
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('mnemonic-form');
     const cancelBtn = document.querySelector('.cancel-btn');

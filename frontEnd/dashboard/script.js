@@ -1,4 +1,9 @@
-// Sample mnemonic data
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import FirebaseService from './FirebaseService.js';
+
+
+const firebaseService = new FirebaseService();
 const mnemonics = [
     {
         title: "CRASH for Beta-Blocker Toxicity",
